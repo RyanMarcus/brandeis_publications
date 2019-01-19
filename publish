@@ -1,0 +1,5 @@
+#! /bin/bash
+
+rm cache.pickle
+pipenv run python3 main.py > index.html
+scp -r * diadem:~/.www/dblp_browse/
