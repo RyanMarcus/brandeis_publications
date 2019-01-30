@@ -27,6 +27,9 @@ def to_pubs(xml):
         if jr:
             venue = jr[0].text
 
+        if venue == "CoRR":
+            continue
+        
         key = r[0].attrib["key"]
         
         yield {"title": title,
@@ -63,7 +66,6 @@ def get_all_pubs():
 
     res = list(all_pubs.values())
     
-        
     res = sorted(res, key=lambda x: x["year"],
                  reverse=True)
     res = groupby(res, key=lambda x: x["year"])

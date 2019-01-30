@@ -12,5 +12,6 @@ professor_ids = [
     "75/534",     # James P
     "s/LiubaShrira",     # Liuba
     "s/JamesAStorer",     # Jim S
-    "01/2933"     # Bert
+    "01/2933",     # Bert
+    "32/9075"  # Hongfu
 ]
